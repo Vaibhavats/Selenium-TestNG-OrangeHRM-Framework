@@ -228,3 +228,12 @@ Open `test-output/ExtentReport.html` in any browser for a full interactive repor
 | Logging                   | Log4j2 with console + rolling file appenders                        |
 | Browser Flexibility       | `DriverFactory` supports Chrome, Firefox, Edge via config           |
 | CI Readiness              | `headless=true` flag + Maven Surefire + exit code on failure        |
+
+
+## 📸 Screenshots
+
+### 📊 Extent Report
+![Extent Report](src/test/resources/screenshots/extent-report.png)
+
+### ▶️ Test Execution
+![Test Run](src/test/resources/screenshots/test-run.png)
