@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<!--
+    testng.xml
+    ==========
+    Master test suite configuration for the Event Management Automation Framework.
+
+    Structure:
+      Suite  → EventManagementSuite
+        ├── Test  → Smoke Tests       (quick health check, run on every build)
+        ├── Test  → Regression Tests  (full coverage, run nightly)
+        └── Test  → Data-Driven Tests (Excel-backed scenarios)
+
+    Parallel execution is configured at the method level (each @Test runs
+    in its own thread). DriverFactory uses ThreadLocal to isolate drivers.
+-->
+
+    <suite name="OrangeHRMSuite"
+       verbose="2"
+       parallel="methods"
+       thread-count="3"
+       data-provider-thread-count="2">
+
+    <!-- ============================================================
+         SMOKE TESTS — critical path, fast feedback
+         ============================================================ -->
+    <test name="SmokeTests" preserve-order="true">
+        <groups>
+            <run>
+                <include name="smoke"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.eventmgmt.tests.LoginTest"/>
+            <class name="com.eventmgmt.tests.DashboardTest"/>
+            <class name="com.eventmgmt.tests.LogoutTest"/>
+        </classes>
+    </test>
+
+    <!-- ============================================================
+         Listeners — wired globally so they fire for every test
+         ============================================================ -->
+    <listeners>
+        <listener class-name="com.eventmgmt.utils.TestListener"/>
+    </listeners>
+
+</suite>

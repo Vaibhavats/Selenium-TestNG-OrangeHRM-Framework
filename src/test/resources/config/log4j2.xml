@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+
+    <Appenders>
+
+        <!-- Console Appender: Prints colored logs to terminal -->
+        <Console name="ConsoleAppender" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %logger{36} - %msg%n"/>
+        </Console>
+
+        <!-- File Appender: Writes logs to a rolling file -->
+        <RollingFile name="FileAppender"
+                     fileName="logs/automation.log"
+                     filePattern="logs/automation-%d{yyyy-MM-dd}-%i.log.gz">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %logger{36} - %msg%n"/>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="10MB"/>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+            </Policies>
+            <DefaultRolloverStrategy max="5"/>
+        </RollingFile>
+
+    </Appenders>
+
+    <Loggers>
+        <!-- Application logger -->
+        <Logger name="com.eventmgmt" level="INFO" additivity="false">
+            <AppenderRef ref="ConsoleAppender"/>
+            <AppenderRef ref="FileAppender"/>
+        </Logger>
+
+        <!-- Root logger fallback -->
+        <Root level="WARN">
+            <AppenderRef ref="ConsoleAppender"/>
+        </Root>
+    </Loggers>
+
+</Configuration>

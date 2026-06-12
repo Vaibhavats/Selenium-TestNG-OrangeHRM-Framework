@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-06-12T16:33:10 IST" name="OrangeHRMSuite" finished-at="2026-06-12T16:33:25 IST" duration-ms="15327">
+    <groups>
+      <group name="smoke">
+        <method signature="DashboardTest.testDashboardValidation()[pri:1, instance:com.eventmgmt.tests.DashboardTest@63fbfaeb]" name="testDashboardValidation" class="com.eventmgmt.tests.DashboardTest"/>
+        <method signature="LoginTest.testValidLogin()[pri:1, instance:com.eventmgmt.tests.LoginTest@598bd2ba]" name="testValidLogin" class="com.eventmgmt.tests.LoginTest"/>
+        <method signature="LogoutTest.testLogoutReturnsToLoginPage()[pri:1, instance:com.eventmgmt.tests.LogoutTest@602e0143]" name="testLogoutReturnsToLoginPage" class="com.eventmgmt.tests.LogoutTest"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2026-06-12T16:33:10 IST" name="SmokeTests" finished-at="2026-06-12T16:33:25 IST" duration-ms="15327">
+      <class name="com.eventmgmt.tests.LogoutTest">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.eventmgmt.tests.LogoutTest@602e0143]" started-at="2026-06-12T16:33:10 IST" name="setUp" finished-at="2026-06-12T16:33:17 IST" duration-ms="7838" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.eventmgmt.tests.LogoutTest.testLogoutReturnsToLoginPage()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLogoutReturnsToLoginPage()[pri:1, instance:com.eventmgmt.tests.LogoutTest@602e0143]" started-at="2026-06-12T16:33:17 IST" name="testLogoutReturnsToLoginPage" finished-at="2026-06-12T16:33:25 IST" duration-ms="7388" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogoutReturnsToLoginPage -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.eventmgmt.tests.LogoutTest@602e0143]" started-at="2026-06-12T16:33:25 IST" name="tearDown" finished-at="2026-06-12T16:33:25 IST" duration-ms="87" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testLogoutReturnsToLoginPage status=SUCCESS method=LogoutTest.testLogoutReturnsToLoginPage()[pri:1, instance:com.eventmgmt.tests.LogoutTest@602e0143] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.eventmgmt.tests.LogoutTest -->
+      <class name="com.eventmgmt.tests.LoginTest">
+        <test-method is-config="true" signature="suiteSetup()[pri:0, instance:com.eventmgmt.tests.LoginTest@598bd2ba]" started-at="2026-06-12T16:33:09 IST" name="suiteSetup" finished-at="2026-06-12T16:33:10 IST" duration-ms="116" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- suiteSetup -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.eventmgmt.tests.LoginTest@598bd2ba]" started-at="2026-06-12T16:33:10 IST" name="setUp" finished-at="2026-06-12T16:33:18 IST" duration-ms="8538" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.eventmgmt.tests.LoginTest.testValidLogin()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testValidLogin()[pri:1, instance:com.eventmgmt.tests.LoginTest@598bd2ba]" started-at="2026-06-12T16:33:18 IST" name="testValidLogin" finished-at="2026-06-12T16:33:22 IST" duration-ms="3656" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidLogin -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.eventmgmt.tests.LoginTest@598bd2ba]" started-at="2026-06-12T16:33:22 IST" name="tearDown" finished-at="2026-06-12T16:33:22 IST" duration-ms="102" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testValidLogin status=SUCCESS method=LoginTest.testValidLogin()[pri:1, instance:com.eventmgmt.tests.LoginTest@598bd2ba] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="suiteTeardown()[pri:0, instance:com.eventmgmt.tests.LoginTest@598bd2ba]" started-at="2026-06-12T16:33:25 IST" name="suiteTeardown" finished-at="2026-06-12T16:33:25 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- suiteTeardown -->
+      </class> <!-- com.eventmgmt.tests.LoginTest -->
+      <class name="com.eventmgmt.tests.DashboardTest">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.eventmgmt.tests.DashboardTest@63fbfaeb]" started-at="2026-06-12T16:33:10 IST" name="setUp" finished-at="2026-06-12T16:33:19 IST" duration-ms="9666" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.eventmgmt.tests.DashboardTest.testDashboardValidation()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testDashboardValidation()[pri:1, instance:com.eventmgmt.tests.DashboardTest@63fbfaeb]" started-at="2026-06-12T16:33:19 IST" name="testDashboardValidation" finished-at="2026-06-12T16:33:24 IST" duration-ms="4667" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDashboardValidation -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.eventmgmt.tests.DashboardTest@63fbfaeb]" started-at="2026-06-12T16:33:24 IST" name="tearDown" finished-at="2026-06-12T16:33:24 IST" duration-ms="88" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testDashboardValidation status=SUCCESS method=DashboardTest.testDashboardValidation()[pri:1, instance:com.eventmgmt.tests.DashboardTest@63fbfaeb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.eventmgmt.tests.DashboardTest -->
+    </test> <!-- SmokeTests -->
+  </suite> <!-- OrangeHRMSuite -->
+</testng-results>
